@@ -1,0 +1,102 @@
+/* styles.css */
+
+  
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, rgb(60, 229, 255), rgb(180, 20, 255));
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+  
+  }
+  
+  .stopwatch-container {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: radial-gradient(circle, rgb(231, 224, 224), rgb(181, 255, 117));
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time-display {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .controls button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #start-btn {
+    background: #4caf50;
+    color: #fff;
+  }
+  
+  #pause-btn {
+    background: #f0ad4e;
+    color: #fff;
+  }
+  
+  #reset-btn {
+    background: #d9534f;
+    color: #fff;
+  }
+  
+  #lap-btn {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .lap-times {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border: 4px;
+
+  }
+  
+  .lap-times li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  /* styles.css */
+@media (max-width: 600px) {
+    .stopwatch-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .time-display {
+      font-size: 2rem; /* Reduce size for smaller screens */
+    }
+  
+    .controls button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      margin: 4px;
+    }
+  
+    .lap-times {
+      max-height: 150px; /* Adjust lap list height for smaller screens */
+    }
+  }
+  
+  
